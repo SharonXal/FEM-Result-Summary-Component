@@ -172,6 +172,12 @@ button:hover{
 }
 
 @media (min-width: 750px){
+
+    html{
+        display: flex;
+        justify-content: center;
+        padding: 7%;
+    }
     
     body{
         display: flex;
