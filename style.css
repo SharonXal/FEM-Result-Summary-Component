@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+/* LEFT SECTION */
+#left-section{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    padding: 30px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+#left-section h4{
+    font-weight: 500;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+#score-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+#score-container p#score{
+    font-size: 2.5rem;
+    font-weight: 800;
+    position: relative;
+    top: 15%;
+}
+#score-container p#total-score{
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+    top: -37%;
+    opacity: 0.4;
+}
+
+#remarks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#remarks h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+#remarks p{
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 0.9378rem;
+    opacity: 0.7;
+}
+/* ---------------------------------- */
+
+/* RIGHT SECTION */
+#right-section{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: -20px;
+    width: 375px;
+}
+#category{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+}
+img{
+    position: relative;
+    top: 3px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#score .points{
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+}
+#score .total-points{
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: hsl(224, 30%, 27%);
+    opacity: 0.7;
+}
+#name{
+    margin-right: 35%;
+    font-weight: 700;
+}
+#reaction{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 64%, 96%);
+}
+#reaction #name{
+    color: hsl(0, 100%, 67%);
+}
+#memory{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: hsl(38, 73%, 94%);
+}
+#memory #name{
+    color: hsl(39, 100%, 56%);
+}
+#verbal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: hsl(165, 86%, 97%);
+}
+#verbal #name{
+    margin-right: 39%;
+    color: hsl(166, 100%, 37%);
+}
+#visual{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(236, 100%, 97%);
+}
+#visual #name{
+    margin-right: 40%;
+    color: hsl(234, 85%, 45%);
+}
+button{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    height: 50px;
+    border-radius: 50px;
+}
+
+@media (min-width: 750px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #main-container{
+        display: flex;
+        flex-direction: row;
+        width: 755px;
+        height: 500px;
+        border-radius: 30px;
+        box-shadow: 5px 3px 12px 2px rgba(0,0,0,0.39);
+    }
+
+    /* LEFT SECTION */
+
+    #left-section{
+        display: flex;
+        border-radius: 30px;
+        justify-content: flex-start;
+        padding-top: 8px;
+    }
+
+    #score-container{
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+    }
+    #score-container p#score{
+        font-size: 3.5rem;
+        position: relative;
+        top: 18px;
+    }
+    #score-container p#total-score{
+        font-size: 0.9rem;
+    }
+    #remarks h3{
+        margin-top: 40px;
+        font-size: 1.4rem;
+    }
+    #remarks p{
+        margin-top: 5px;
+        width: 245px;
+    }
+
+    /* RIGHT SECTION */
+    #reaction,
+    #memory,
+    #verbal{
+        margin-bottom: 15px;
+    }
+    #visual{
+        margin-bottom: 1px;
+    }
+}
